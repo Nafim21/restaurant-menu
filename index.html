@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Doré | Fine Dining Restaurant</title>
+  <meta name="description" content="Maison Doré – an award-winning fine dining experience. Explore our menu and reserve your table.">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">Maison <span>Doré</span></a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#menu" class="nav__link">Menu</a></li>
+          <li><a href="#story" class="nav__link">Our Story</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__cta-mobile"><a href="#contact" class="btn btn--gold">Reserve a Table</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--gold header__cta">Reserve a Table</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__content container">
+        <p class="eyebrow">Est. 2009 · Fine Dining</p>
+        <h1>Where Every Plate<br>Becomes a <em>Masterpiece</em></h1>
+        <p class="hero__text">Seasonal ingredients, timeless technique and an evening you will remember long after the last course.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--gold">Explore the Menu</a>
+          <a href="#contact" class="btn btn--outline">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU ========== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Our Menu</p>
+          <h2>Crafted With Passion</h2>
+          <div class="divider"></div>
+        </header>
+
+        <!-- Filter tabs -->
+        <div class="filters" role="tablist" aria-label="Menu categories">
+          <button class="filter active" data-filter="all" role="tab">All</button>
+          <button class="filter" data-filter="appetizers" role="tab">Appetizers</button>
+          <button class="filter" data-filter="mains" role="tab">Mains</button>
+          <button class="filter" data-filter="desserts" role="tab">Desserts</button>
+          <button class="filter" data-filter="cocktails" role="tab">Signature Cocktails</button>
+        </div>
+
+        <!-- Menu grid -->
+        <div class="menu-grid">
+
+          <article class="card" data-category="appetizers">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Seared scallops with citrus salad" loading="lazy">
+              <span class="badge">Appetizer</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Seared Scallops</h3><span class="price">$24</span></div>
+              <p>Hokkaido scallops, cauliflower purée, brown butter and charred citrus.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="appetizers">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80" alt="Beef tartare with truffle" loading="lazy">
+              <span class="badge">Appetizer</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Truffle Beef Tartare</h3><span class="price">$22</span></div>
+              <p>Hand-cut wagyu, quail yolk, shaved black truffle and toasted brioche.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="mains">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Plated filet mignon" loading="lazy">
+              <span class="badge">Main</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Filet Mignon</h3><span class="price">$58</span></div>
+              <p>Dry-aged tenderloin, bone marrow jus, pommes purée and glazed baby carrots.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="mains">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Lobster tagliatelle" loading="lazy">
+              <span class="badge">Main</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Lobster Tagliatelle</h3><span class="price">$46</span></div>
+              <p>Fresh egg pasta, Maine lobster, saffron bisque and fragrant tarragon oil.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="desserts">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Dark chocolate fondant" loading="lazy">
+              <span class="badge">Dessert</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Dark Chocolate Fondant</h3><span class="price">$16</span></div>
+              <p>Valrhona 70% molten centre, vanilla bean ice cream and gold leaf.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="desserts">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" alt="Berry pancake stack" loading="lazy">
+              <span class="badge">Dessert</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Berry Soufflé Stack</h3><span class="price">$15</span></div>
+              <p>Cloud-light soufflé pancakes, macerated berries and whipped crème fraîche.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="cocktails">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Golden hour cocktail" loading="lazy">
+              <span class="badge">Cocktail</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>The Golden Hour</h3><span class="price">$18</span></div>
+              <p>Aged bourbon, honey, smoked orange bitters and a clarified lemon finish.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="cocktails">
+            <div class="card__img">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Elegant martini cocktail" loading="lazy">
+              <span class="badge">Cocktail</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row"><h3>Noir Martini</h3><span class="price">$19</span></div>
+              <p>Premium vodka, espresso, vanilla liqueur and a silky cocoa-dusted foam.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section section--alt" id="story">
+      <div class="container about">
+        <div class="about__img">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80" alt="Executive chef plating a dish" loading="lazy">
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2>The Art of Honest Ingredients</h2>
+          <div class="divider divider--left"></div>
+          <p>For over fifteen years, Chef Étienne Laurent has built Maison Doré on a simple belief: extraordinary food begins with respect for the ingredient. We work with small farms and local fishermen to bring the season's finest to your table.</p>
+          <p>Each dish blends classical French technique with modern restraint, served in an intimate room designed for conversation, celebration and discovery.</p>
+          <ul class="stats">
+            <li><strong>15+</strong><span>Years of craft</span></li>
+            <li><strong>2</strong><span>Michelin mentions</span></li>
+            <li><strong>40</strong><span>Local partners</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="logo">Maison <span>Doré</span></a>
+        <p class="footer__about">A modern fine dining destination celebrating seasonal produce and timeless hospitality.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/share/1CfUyzGFNG/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nafim073/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://media.tenor.com/eGmejOcXOp8AAAAi/nahi-hai-bhai-jeeveshu-ahluwalia.gif" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://media.tenor.com/eGmejOcXOp8AAAAi/nahi-hai-bhai-jeeveshu-ahluwalia.gif" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Opening Hours</h4>
+        <ul class="footer__list">
+          <li><span>Mon – Thu</span><span>5:00 PM – 10:00 PM</span></li>
+          <li><span>Fri – Sat</span><span>5:00 PM – 11:30 PM</span></li>
+          <li><span>Sunday</span><span>12:00 PM – 9:00 PM</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit Us</h4>
+        <address class="footer__list">
+          <p><i class="fa-solid fa-location-dot"></i> 128 Gilded Avenue, Downtown</p>
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 012-3456</p>
+          <p><i class="fa-solid fa-envelope"></i> reservations@maisondore.com</p>
+        </address>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#contact">Reservations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year">2026</span> Maison Doré. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      hamburger.classList.toggle('active', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    // Close mobile menu after clicking a link
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+    }));
+
+    // Header style change on scroll
+    const header = document.getElementById('header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll); onScroll();
+
+    // Menu category filtering
+    const filters = document.querySelectorAll('.filter');
+    const cards = document.querySelectorAll('.card');
+    filters.forEach(btn => btn.addEventListener('click', () => {
+      filters.forEach(f => f.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.filter;
+      cards.forEach(card => {
+        const show = cat === 'all' || card.dataset.category === cat;
+        card.classList.toggle('hidden', !show);
+      });
+    }));
+
+    // Dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
